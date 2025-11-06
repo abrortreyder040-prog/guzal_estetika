@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go‘zal Estetika — Professional Kosmetolog</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 50px;
+      background: linear-gradient(180deg, #000 0%, #0a0a0a 100%);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: #00aaff;
+      margin-bottom: 15px;
+      animation: fadeInDown 1.2s ease forwards;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #f5f5f5;
+      opacity: 0.9;
+      animation: fadeInUp 1.4s ease forwards;
+    }
+
+    .intro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 60px 20px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    .intro img {
+      width: 300px;
+      border-radius: 25px;
+      border: 2px solid #00aaff;
+      box-shadow: 0 0 20px rgba(0,170,255,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .intro img:hover {
+      transform: scale(1.05);
+    }
+
+    .intro .text {
+      max-width: 500px;
+    }
+
+    .intro p {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00aaff;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #007acc;
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      color: #00aaff;
+      margin-bottom: 35px;
+    }
+
+    .services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .service {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 18px;
+      padding: 20px;
+      max-width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0,170,255,0.3);
+    }
+
+    .service img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 12px;
+    }
+
+    .service h3 {
+      color: #00aaff;
+      margin-bottom: 10px;
+    }
+
+    .result img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 20px;
+      border: 2px solid #00aaff;
+      box-shadow: 0 0 25px rgba(0,170,255,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .result img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background: #000;
+      padding: 35px 10px;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid #222;
+    }
+
+    .social {
+      margin-bottom: 10px;
+    }
+
+    .social a {
+      color: #00aaff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      color: #fff;
+    }
+
+    .contacts {
+      margin-top: 10px;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .contacts a {
+      color: #00aaff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contacts a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* Responsivlik */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .intro {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .intro img {
+        width: 80%;
+        max-width: 320px;
+      }
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+      .service {
+        max-width: 90%;
+      }
+      .contacts {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* Animatsiyalar */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tabiiy go‘zallik — sizning ishonchingiz!</h1>
+    <p>Men — Go‘zal, Andijon shahrida 5 yildan beri professional kosmetologman. Har bir mijozim uchun individual yondashuv — mening ustuvor tamoyilim.</p>
+  </header>
+
+  <div class="intro">
+    <div class="text">
+      <p>Tabiiylik, nozik parvarish va zamonaviy uslublar — sizni yanada go‘zal qiladi. Qabulga yozilish uchun quyidagi tugmani bosing:</p>
+      <a href="https://t.me/Guzal_estetika" target="_blank" class="btn">Telegram orqali yozilish</a>
+    </div>
+    <img src="https://i.ibb.co/G4R3jDj5/Remove-bg-ai-1762410028189.png" alt="Kosmetolog Go‘zal rasmi">
+  </div>
+
+  <section class="result">
+    <h2>Natijalar</h2>
+    <img src="https://i.ibb.co/ZprzczcN/service3-jpg.jpg" alt="Natija rasmi">
+  </section>
+
+  <section>
+    <h2>Xizmatlar</h2>
+    <div class="services">
+      <div class="service">
+        <img src="https://i.ibb.co/7tGnzQqd/service1-jpg.jpg" alt="Yuz tozalash">
+        <h3>Yuz tozalash</h3>
+        <p>Terini chuqur tozalash va yangilash jarayoni.</p>
+      </div>
+
+      <div class="service">
+        <img src="https://i.ibb.co/781ypk2/service2-jpg.jpg" alt="Mezoterapiya">
+        <h3>Mezoterapiya</h3>
+        <p>Terining sog‘lom va chiroyli ko‘rinishini tiklash.</p>
+      </div>
+
+      <div class="service">
+        <img src="https://i.ibb.co/ZprzczcN/service3-jpg.jpg" alt="Lash Lifting">
+        <h3>Lash Lifting</h3>
+        <p>Tabiiy kipriklarni buklash va mustahkamlash.</p>
+      </div>
+
+      <div class="service">
+        <img src="https://i.ibb.co/prf2X2rB/photo-2025-11-06-12-16-03.jpg" alt="Botoks">
+        <h3>Botoks</h3>
+        <p>Yuz mushaklarini bo‘shashtirib, silliq va yosh ko‘rinishni beradi.</p>
+      </div>
+
+      <div class="service">
+        <img src="https://i.ibb.co/Qv5kkHTd/photo-2025-11-06-12-15-32.jpg" alt="Browlifting">
+        <h3>Brow Lifting</h3>
+        <p>Qoshlarni ko‘tarish va tabiiy shakl berish muolajasi.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social">
+      <a href="https://t.me/Guzal_estetika" target="_blank">Telegram</a> |
+      <a href="https://instagram.com/guzal_estetika" target="_blank">Instagram</a>
+    </div>
+    <div class="contacts">
+      <a href="tel:+998905444744">📞 +998 90 544 47 44</a> &nbsp; | &nbsp;
+      <a href="tel:+998972322030">📞 +998 97 232 20 30</a>
+    </div>
+    <p style="margin-top:15px;">© 2025 Go‘zal Estetika. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+</body>
+</html>
